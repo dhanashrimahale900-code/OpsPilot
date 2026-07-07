@@ -9,7 +9,7 @@ import html2canvas from "html2canvas";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
-const API_URL = "http://127.0.0.1:5000"; 
+const API_URL = "https://opspilot-ftc0.onrender.com"; 
 
 export default function Home() {
   const reportRef = useRef<HTMLDivElement | null>(null);
