@@ -78,25 +78,28 @@ Business Analysis Response
 git clone https://github.com/dhanashrimahale900-code/OpsPilot.git
 
 
-## Screenshots
+## 📸 Screenshots
 
 ### Home Page
+
 ![Home](screenshots/home.png)
 
-### Business Analysis
+### Business Problem Analysis
+
 ![Analysis](screenshots/analysis.png)
 
-### AI Response
+### AI Generated Business Insights
+
 ![Result](screenshots/result.png)
 
 
-## Live Demo
+## 🌐 Live Demo
 
-### Frontend (Vercel)
-https://https://business-ai-opspilot.vercel.app
+Frontend: 
+https://business-ai-opspilot.vercel.app
 
-### Backend (Render)
+Backend:  
 https://opspilot-ftc0.onrender.com
 
-### GitHub Repository
+GitHub Repository:  
 https://github.com/dhanashrimahale900-code/OpsPilot
