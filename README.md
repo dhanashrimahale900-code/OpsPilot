@@ -34,13 +34,16 @@ Business Analysis Response
 
 ## Features
 
-- AI-powered business analysis
-- Multi-agent architecture
-- Risk assessment
-- Root cause analysis
-- Business recommendations
-- Modern responsive UI
-- Cloud deployment
+- Multi-Agent AI Architecture
+- MCP (Model Context Protocol) Server
+- Agent CLI
+- AI Business Analysis
+- Risk Assessment
+- Root Cause Analysis
+- Strategic Recommendations
+- KPI Generation
+- Cloud Deployment (Render + Vercel)
+- Secure Environment Variables
 
 ## Security Features
 
