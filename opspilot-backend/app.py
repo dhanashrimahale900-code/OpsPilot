@@ -9,7 +9,17 @@ from routes.agents import agents_bp
 app = Flask(__name__)
 
 # Enable CORS
-CORS(app)
+CORS(
+    app,
+    resources={
+        r"/*": {
+            "origins": [
+                "https://business-ai-opspilot.vercel.app",
+                "http://localhost:3000"
+            ]
+        }
+    }
+)
 
 # Register Blueprints
 app.register_blueprint(analyze_bp)
@@ -33,9 +43,20 @@ def health():
     }
 
 
+import os
+
 if __name__ == "__main__":
     app.run(
         host="0.0.0.0",
-        port=5000,
-        debug=True
+        port=int(os.getenv("PORT", 5000)),
+        debug=os.getenv("FLASK_ENV") == "development"
     )
+
+@app.route("/health")
+def health():
+    return {
+        "status": "healthy",
+        "service": "OpsPilot AI",
+        "version": "1.0.0",
+        "ai": "Gemini 2.5 Flash"
+    }

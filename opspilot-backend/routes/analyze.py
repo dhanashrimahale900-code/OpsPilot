@@ -1,11 +1,16 @@
 from flask import Blueprint, request
 
-from services.gemini_service import generate_business_analysis
+from agents.orchestrator import run_multi_agent
 from utils.helpers import (
     validate_problem,
     success_response,
     error_response
 )
+
+valid, message = validate_input(problem)
+
+if not valid:
+    return error_response(message)
 
 analyze_bp = Blueprint("analyze", __name__)
 
@@ -22,7 +27,7 @@ def analyze():
 
         problem = result
 
-        report = generate_business_analysis(problem)
+        report = run_multi_agent(problem)
 
         return success_response(
             {

@@ -1,53 +1,46 @@
 from services.gemini_service import generate_business_analysis
 
+
 def analyze_problem(problem):
+    """
+    Analyst Agent
+    Responsible for understanding the business problem
+    and identifying root causes.
+    """
 
     prompt = f"""
-You are a senior Business Strategy Consultant.
+You are the Analyst Agent in a Multi-Agent Business Intelligence System.
 
-Analyze the following business problem:
+Your ONLY responsibility is to analyze the business problem.
 
+Business Problem:
 {problem}
 
-Return the response ONLY in GitHub Markdown.
+Return the result in GitHub Markdown.
 
-Use exactly this format:
-
-# 📊 Business Analysis Report
+# Analyst Agent Report
 
 ## Executive Summary
+Provide a short overview.
 
-## Root Causes
+## Problem Analysis
+Explain what is happening.
 
-- Point 1
-- Point 2
+## Possible Root Causes
+- Cause 1
+- Cause 2
+- Cause 3
 
-## Business Risks
+## Business Impact
+- Impact 1
+- Impact 2
 
-- Point 1
-- Point 2
+Do NOT provide:
+- Risk assessment
+- Recommendations
+- Action plan
 
-## Recommendations
-
-- Point 1
-- Point 2
-
-## KPI Metrics
-
-- KPI 1
-- KPI 2
-
-## Priority Actions
-
-1. Action 1
-2. Action 2
-3. Action 3
-
-Rules:
-- Use proper Markdown headings (# and ##).
-- Use bullet points.
-- Use **bold** where appropriate.
-- Do NOT return plain text.
+Those will be handled by other agents.
 """
 
     return generate_business_analysis(prompt)
