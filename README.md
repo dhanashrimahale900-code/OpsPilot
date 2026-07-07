@@ -121,3 +121,13 @@ https://opspilot-ftc0.onrender.com
 
 GitHub Repository:  
 https://github.com/dhanashrimahale900-code/OpsPilot
+
+## 🎯 Kaggle Capstone Requirements
+
+This project demonstrates the following concepts from the AI Agents Intensive Vibe Coding course:
+
+- ✅ AI Agent-based business analysis workflow
+- ✅ Secure API key management using environment variables
+- ✅ Cloud deployment using Vercel and Render
+- ✅ REST API communication between frontend and backend
+- ✅ Google Gemini AI integration for intelligent reasoning
