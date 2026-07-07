@@ -4,7 +4,7 @@ from agents.recommendation_agent import generate_recommendations
 from agents.report_agent import create_report
 
 
-def run_multi_agent_workflow(problem):
+def run_multi_agent(problem):
     """
     Orchestrates all AI agents.
     """
