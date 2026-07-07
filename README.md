@@ -78,19 +78,37 @@ Business Analysis Response
 git clone https://github.com/dhanashrimahale900-code/OpsPilot.git
 
 
-## 📸 Screenshots
+# 📸 Screenshots
 
-### Home Page
-
+## 🏠 Home Page
 ![Home](screenshots/home.png)
 
-### Business Problem Analysis
+## 🤖 AI Features
+![AI Features](screenshots/ai%20features.png)
 
+## 📊 Business Analysis
 ![Analysis](screenshots/analysis.png)
 
-### AI Generated Business Insights
+## 🧠 AI Analysis Result 1
+![Result 1](screenshots/result1.png)
 
-![Result](screenshots/result.png)
+## 📈 AI Analysis Result 2
+![Result 2](screenshots/result2.png)
+
+## 📋 AI Analysis Result 3
+![Result 3](screenshots/result3.png)
+
+## ⚙️ Backend API
+![Backend](screenshots/backend.png)
+
+## 🏗️ System Architecture
+![Architecture](screenshots/Architecture.png)
+
+## 🔄 How OpsPilot Works
+![Workflow](screenshots/how%20opspilot%20work.png)
+
+## 📄 Footer
+![Footer](screenshots/footer.png)
 
 
 ## 🌐 Live Demo
