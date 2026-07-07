@@ -20,15 +20,29 @@ OpsPilot AI uses multiple AI agents to automatically analyze business problems, 
 
 ## Architecture
 
-User
-↓
-Next.js Frontend (Vercel)
-↓ REST API
-Flask Backend (Render)
-↓
-Google Gemini AI
-↓
-Business Analysis Response
+                        User
+                          │
+                          ▼
+              Next.js Frontend (Vercel)
+                          │
+                     REST API
+                          │
+                          ▼
+                 Flask Backend (Render)
+                          │
+                          ▼
+              Multi-Agent Orchestrator
+                          │
+      ┌─────────────┬──────────────┬──────────────┐
+      ▼             ▼              ▼
+ Analyst Agent   Risk Agent   Recommendation Agent
+      └─────────────┴──────────────┘
+                    ▼
+               Report Agent
+                    ▼
+           Google Gemini 2.5 Flash
+                    ▼
+          Final Business Report
 
 ---
 
@@ -44,6 +58,11 @@ Business Analysis Response
 - KPI Generation
 - Cloud Deployment (Render + Vercel)
 - Secure Environment Variables
+-  Multi-Agent Orchestration
+- FastMCP Server Integration
+- Markdown Report Generation
+- Health Monitoring Endpoint
+- Production Deployment
 
 ## Security Features
 
@@ -54,6 +73,25 @@ Business Analysis Response
 - CORS enabled
 
 ---
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | / | Backend status |
+| GET | /health | Health check |
+| POST | /analyze | Generate AI business analysis |
+
+## Multi-Agent Workflow
+
+1. User submits a business problem.
+2. Flask API validates the request.
+3. Orchestrator coordinates AI agents.
+4. Analyst Agent performs business analysis.
+5. Risk Agent identifies business risks.
+6. Recommendation Agent generates KPIs and strategies.
+7. Report Agent combines all outputs.
+8. Final Markdown report is returned.
 
 ## Tech Stack
 
@@ -132,6 +170,15 @@ https://opspilot-ftc0.onrender.com
 
 GitHub Repository:  
 https://github.com/dhanashrimahale900-code/OpsPilot
+
+## Future Scope
+
+- Authentication & User Accounts
+- Business Analytics Dashboard
+- PDF & Excel Report Export
+- Real-time Collaboration
+- Additional AI Agents
+- Database Integration
 
 ## 🎯 Kaggle Capstone Requirements
 
