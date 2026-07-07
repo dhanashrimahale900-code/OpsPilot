@@ -42,6 +42,14 @@ Business Analysis Response
 - Modern responsive UI
 - Cloud deployment
 
+## Security Features
+
+- Input validation
+- Prompt injection protection
+- Request size limitation
+- Environment variable based API key management
+- CORS enabled
+
 ---
 
 ## Tech Stack
