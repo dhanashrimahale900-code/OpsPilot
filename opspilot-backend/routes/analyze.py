@@ -1,16 +1,11 @@
 from flask import Blueprint, request
 
-from agents.orchestrator import run_multi_agent
+from services.orchestrator import run_multi_agent
 from utils.helpers import (
     validate_problem,
     success_response,
     error_response
 )
-
-valid, message = validate_input(problem)
-
-if not valid:
-    return error_response(message)
 
 analyze_bp = Blueprint("analyze", __name__)
 
