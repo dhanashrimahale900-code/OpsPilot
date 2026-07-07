@@ -1,6 +1,6 @@
 from flask import Blueprint, request
 
-from services.orchestrator import run_multi_agent_workflow
+from services.orchestrator import run_multi_agent
 from utils.helpers import (
     validate_problem,
     success_response,
@@ -22,7 +22,7 @@ def analyze():
 
         problem = result
 
-        report = run_multi_agent_workflow(problem)
+        report = run_multi_agent(problem)
 
         return success_response(
             {
